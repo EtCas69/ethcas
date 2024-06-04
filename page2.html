@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>እጣ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #2C2F33;
+      color: #FFFFFF;
+    }
+
+    #form-container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: #36393F;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-top: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+    }
+    #arrow-link {
+      text-decoration: none;
+      color: #7186d3;
+      font-size: 50px;
+      transition: color 0.3s ease;
+    }
+
+    #arrow-link:hover {
+      color: #263f9d; 
+    }
+
+    #message {
+      color: #da727c;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="form-container">
+    <iframe src="https://form.everestwebdeals.co/?form=23666e57827dcd138cd90cec40b54014" width="640" height="2397" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div id="arrow-box">
+        <p id="message">* ስም እና ስልክ ቁጥሮን በማስገባት ከላይ ባለው ቅፅ እድለኛ ቁጥሮን መርጠው ሲጨርሱ ከታች ያለውን ምልክት በመጫን መደብ ያስቀምጡ፡፡ *</p>
+    <a href="page3.html" id="arrow-link">&#9654; </a>
+</div>
+<div id="form-container">
+    <iframe src="https://forms.gle/n9hd2vkap4ctLjeM6" width="640" height="2397" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div id="arrow-box">
+        <p id="message">* ስም እና ስልክ ቁጥሮን በማስገባት ከላይ ባለው ቅፅ እድለኛ ቁጥሮን መርጠው ሲጨርሱ ከታች ያለውን ምልክት በመጫን መደብ ያስቀምጡ፡፡ *</p>
+    <a href="page3.html" id="arrow-link">&#9654; </a>
+</div>
+<script>
+    
+    document.getElementById('google-form').addEventListener('load', function () {
+     
+      document.getElementById('google-form').contentWindow.document.querySelector('form').addEventListener('submit', function () {
+       
+        window.location.href = 'page3.html';
+      });
+    });
+  </script>
+</body>
+</html>

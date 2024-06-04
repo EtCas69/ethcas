@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ክፍያ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #2C2F33;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #7289DA; 
+    }
+
+    .outer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; 
+      width: 80%; 
+    }
+
+    .container {
+      flex: 1;
+      max-width: 48%; 
+      background-color: #36393F;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 20px;
+      overflow: hidden; 
+      padding: 20px;
+    }
+
+    .box {
+      margin-bottom: 15px;
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      background-color: #7289DA; 
+    }
+
+    .box:hover {
+      background-color: #4E5D94; 
+    }
+
+    .box.right {
+      align-self: flex-start;
+    }
+
+    .label {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #7289DA; 
+    }
+  </style>
+</head>
+<body>
+
+<header>
+የፈለጉትን ሲም አማራጭ በመጠቀም በሞባይል ካርድ ክፍያ ይመድቡ
+</header>
+
+<div class="outer-container">
+
+  <div class="container">
+    <div class="label">ኢትዮ ቴሌኮም</div>
+    <div class="box" onclick="copyUSSDCode('*805*0920810603*10#')">10</div>
+  </div>
+
+  <div class="container">
+    <div class="label">ሳፋሪኮም ኤምፔሳ</div>
+    <div class="box right" onclick="copyUSSDCode('*733*3*2*1*0715474891*10#')">10</div>
+  </div>
+</div>
+
+<script>
+  function copyUSSDCode(code) {
+    navigator.clipboard.writeText(code).then(function() {
+      alert("Copied: " + code);
+    }).catch(function(err) {
+      console.error('Unable to copy text', err);
+    });
+  }
+</script>
+
+</body>
+</html>
